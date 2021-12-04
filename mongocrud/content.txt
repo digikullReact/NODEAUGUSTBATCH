@@ -1,0 +1,18 @@
+//middlewares
+//clean code architecture  --> folder structure for our apis
+//crud operations // routing ---> jwt authetication -->
+//File Upload
+//centrallized error handling
+//centrallized response
+// logging 
+//testing --->jest and supertest //unit ,intergration test
+//  caching  --->mechanism  --->redis ---cache
+
+//Mongodb -->find ,create ,update ,delete,aggregate -->
+
+//  --->heroku
+
+//aws domain redirect
+
+mongoose hooks --->password hashing
+// Debugger vs code

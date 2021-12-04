@@ -1,0 +1,10 @@
+{
+    "development":{
+        "PORT":3000,
+        "API_KEY":"3344"
+    },
+    "production":{
+        "PORT":8080,
+        "API_KEY":"3344"
+    }
+}

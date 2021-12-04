@@ -1,0 +1,20 @@
+<h1 style="color:green">I will be replaced</h1>
+
+
+{{#each people}}
+{{#if vaccinated}}
+<li style="color: green;">{{name}}</li>
+
+{{else}}
+   <li style="color: red;">{{name}}</li>
+{{/if}}
+   
+{{/each}}
+
+<img src="images/goldie.jpeg"/>
+
+<form method="post" action="/submit">
+<input type="text" name="name">
+<button type="submit">Submit</button>
+
+</form>

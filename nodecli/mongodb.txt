@@ -1,0 +1,9 @@
+use dbName  // it will create the db if not created and let u move inside that db
+
+show dbs;// give list of dbs present in our machine
+
+show collections; // gives all the collections present inside that db;
+cls // clear the screen
+db.customers.find().pretty() // db.collectionName.find();  // gives all documents in your mongodb
+
+db.collectionName.findOne({condition:"value"}) // returns the first documents that satisfies the condition`

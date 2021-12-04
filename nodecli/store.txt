@@ -1,0 +1,3 @@
+asprin ,20 ,10,shyamparacetamol ,20 ,10,shyam 
+paracetamol ,20 ,10,shyam 
+paracetamol ,20 ,10,shyam 

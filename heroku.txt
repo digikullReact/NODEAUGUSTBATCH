@@ -1,0 +1,15 @@
+1-Install Heroku Cli on your system
+Link -https://devcenter.heroku.com/articles/heroku-cli#download-and-install
+
+2- go inside the app folder which you want to deploy 
+3-Create .gitignore and ignore node_modules
+4-git init 
+5-git add .
+// Heroku Commands
+6- heroku login ---will open up the browser for heroku login
+7-heroku create 
+8- git commit -m herokuapp
+9- git push heroku master
+
+P.S -MAke sure you have npm start command in package.json
+porcess.env.PORT should be used to run the server

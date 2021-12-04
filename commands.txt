@@ -1,0 +1,66 @@
+1-git init  ---which initiallizes and empty repoitory
+// when you initialize git in a folder that folder technically get converted into a repository
+
+git add filename  
+// shortcut --> git add .   // add all files into git
+
+// it makes aware to git that following file has been changed
+
+
+git commit  -m "i have added two new files"
+
+// saves your changes in the git tracking in you repository
+
+/// run only once
+git remote add origin "origin name"
+// Adds a remote repoitory to your local repoitory
+
+/// Branching
+git branch -->to see all the branches in your repository /the branch you are currently in 
+// will be highlited
+git branch branchName
+
+git checkout branchName // moves you to another branch
+
+//git push -u origin developer -->is used  to push changes to the upstream (your remote repository) 
+
+
+// Pull
+git pull origin branchName  // getting the  changes from the remote repository
+
+//Merge And 
+
+
+
+
+
+git push -u origin branchname
+
+// pushes or sends your local code to the remote repository
+
+
+
+git clone repoitoryurl 
+
+// clones the remote repository on your local system
+
+
+
+///conflicts   ------>
+
+
+/// what are conflicts ?
+/// conflicts arise when you have different version of same file in your local and in your remote
+
+
+///  git pull origin branchname    -->this is used to get the remote changes from the github
+
+//git merge branchname   // merging the content of one branch into another
+
+before commitiing ----->alwasy run git add .
+
+git add . ---->git commit --->git push
+//git merge and pull requuest
+
+
+//Mong

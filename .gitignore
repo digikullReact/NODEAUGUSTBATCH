@@ -1,0 +1,15 @@
+/express/node_modules
+./express/node_modules
+.env
+
+./expressrendering/node_modules
+./handlebars/node_modules
+/expressrendering/node_modules
+/handlebars/node_modules
+/mongodbintro/node_modules
+./mongodbintro/node_modules
+./nodecli/node_modules
+/nodecli/node_modules
+
+./mongocrud/node_modules
+/mongocrud/node_modules
