@@ -1,6 +1,6 @@
-//middlewares
-//clean code architecture  --> folder structure for our apis
-//crud operations // routing ---> jwt authetication -->
+//middlewares  //covered
+//clean code architecture  --> folder structure for our apis //done
+//crud operations // routing //done ---> jwt authetication -->
 //File Upload
 //centrallized error handling
 //centrallized response
@@ -16,3 +16,9 @@
 
 mongoose hooks --->password hashing
 // Debugger vs code
+
+
+
+Middleware is a design pattern to eloquently add cross cutting concerns like logging, handling authentication, 
+or gzip compression without having many code contact points. Since these cross-cutting concerns are 
+handled in middleware, the controllers/user defined handlers can focus on the core business logic.

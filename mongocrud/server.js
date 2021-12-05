@@ -5,12 +5,17 @@ const app=require("./app");
 
 
 mongoose.connect(process.env.MONGO_URL).then(data=>{
-    console.log("Connected To Db"); //Replacing with logger 
-
-    app.listen(process.env.PORT,()=>{
-        console.log("Server Running");
+    return  new Promise((res,rej)=>{
+        res("Connected To Db")
     })
-}).catch(err=>{
+
+
+}).then(data=>{
+    app.listen(process.env.PORT,()=>{
+        console.log("Server Running "+data);
+    })
+}).
+catch(err=>{
     console.log(err);
 })
 

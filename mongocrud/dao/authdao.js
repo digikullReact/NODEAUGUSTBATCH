@@ -8,3 +8,9 @@ exports.createUserDaoAsync = async (body) => {
      throw new Error(error);
   }
 };
+//db.collec
+exports.findAllUsers=()=>{
+
+  return User.find()
+
+}

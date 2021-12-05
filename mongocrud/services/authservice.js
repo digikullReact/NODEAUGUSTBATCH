@@ -1,4 +1,4 @@
-const { createUserDaoAsync } = require("../dao/authdao")
+const { createUserDaoAsync, findAllUsers } = require("../dao/authdao")
 
 exports.createUserService=async(req)=>{
     try {
@@ -7,6 +7,13 @@ exports.createUserService=async(req)=>{
     } catch (error) {
         throw new Error(error);
     }
+
+
+}
+
+exports.getAllUserService=()=>{
+
+   return  findAllUsers()
 
 
 }
