@@ -13,3 +13,5 @@
 
 ./mongocrud/node_modules
 /mongocrud/node_modules
+./simmplemiddleware/node_modules
+/simmplemiddleware/node_modules

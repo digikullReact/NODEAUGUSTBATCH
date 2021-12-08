@@ -1,6 +1,11 @@
 //middlewares  //covered
 //clean code architecture  --> folder structure for our apis //done
-//crud operations // routing //done ---> jwt authetication -->
+// Friday --->aggregation /groupby /embedded deocuments 
+//file operations
+//testing
+
+
+//crud operations // routing //done ---> jwt authetication -->//pagination with find
 //File Upload
 //centrallized error handling
 //centrallized response

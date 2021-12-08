@@ -7,7 +7,7 @@ exports.signUp=async(req,res)=>{
         //    const data=User.find();
 
         const data=await createUserService(req);
-        res.json({message:"Success",data:data});
+        res.json({message:"Success",data:[data]});
         
     } catch (error) {
         console.log(error);
@@ -19,7 +19,7 @@ exports.signUp=async(req,res)=>{
 exports.getAllData=(req,res)=>{
 
     getAllUserService().then(data=>{
-        res.json(data);
+        res.json({response:data});
 
     }).catch(err=>{
 
