@@ -1,10 +1,11 @@
 const express=require("express");
 const { getData, insertOne,insertMany, recordByUsername, updateById, updateAll,deleteOne, deleteAll } = require("../controllers/crudecontroller");
+const { validate } = require("../middlewares");
 
 
 const router=express.Router();
 
-router.get("/getAllData",getData);
+router.get("/getAllData",validate,getData);
 
 router.post("/insertOne",insertOne);
 

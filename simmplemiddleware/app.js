@@ -13,3 +13,7 @@ app.use("/api",crudRoutes)
 
 
 module.exports=app;
+
+//  ---->soem data is cming from request  we want to validate it
+// logger --->in file
+// data massage or data conversion ---> passowrd (12,33,)  --->encryptted form

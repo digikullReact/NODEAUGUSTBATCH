@@ -15,3 +15,5 @@
 /mongocrud/node_modules
 ./simmplemiddleware/node_modules
 /simmplemiddleware/node_modules
+/mongodagg/node_modules
+./mongodagg/node_modules

@@ -1,9 +1,16 @@
 //middlewares  //covered
 //clean code architecture  --> folder structure for our apis //done
-// Friday --->aggregation /groupby /embedded deocuments 
+// Friday --->aggregation /groupby /embedded deocuments //done
 //file operations
 //testing
 
+
+// tomorrow --->testing 
+// find with skip and limit
+// --->file upload // file operations
+
+//  ---->Demo for blocking code and non blocking code 
+//worker_threads //clustering --->
 
 //crud operations // routing //done ---> jwt authetication -->//pagination with find
 //File Upload

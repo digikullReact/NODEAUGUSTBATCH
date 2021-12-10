@@ -1,12 +1,31 @@
 const User=require("../models/User");
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 
 exports.getData=async(req,res)=>{
 
+  // wrapped together
+//  tshirts // pants // jackets 
+
    try {
 
-       const data= await User.find();
 
-       res.json({message:"All Records",data:data});
+        console.log(`Requets has arrived with followig params ${req.body.username}`)
+
+        // password encoidng
+
+       // const encodepassword=bcrypt.hash(req.body.password, saltRounds);
+
+       /// req.body.password=encodepassword;
+
+
+        const data= await User.find();
+        res.json({message:"All Records",data:data});
+
+       
+  
+   
+
         
     } catch (error) {
         console.log(error);
