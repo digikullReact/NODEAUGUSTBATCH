@@ -36,16 +36,20 @@ exports.markAttendance=async(req,res)=>{
 
 exports.getEmployees=async(req,res)=>{
 
+
+    //skip and limit
     try {
 
  // Join mysql
-         const data=  await Employee.find().populate([
-             {
-                path: 'attendance',
-                model: 'attendance',
-             }
-         ])
-         res.json({message:"Success",data:data})
+       
+         const data=await Promise.all([Employee.find().populate([
+            {
+               path: 'attendance',
+               model: 'attendance',
+            }
+        ]).skip(req.body.page*req.body.limit).limit(req.body.limit),Employee.find().count()])
+
+         res.json({message:"Success",data:data[0],totalCount:data[1]})
    
            
        } catch (error) {
@@ -104,3 +108,4 @@ exports.getEmployeeById=async(req,res)=>{
        }
 
 }
+

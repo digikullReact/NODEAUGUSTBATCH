@@ -4,7 +4,7 @@ const router=express.Router();  //router object
 
 router.post("/create",createEmployee);
 router.post("/markAttendance",markAttendance);
-router.get("/getAll",getEmployees);
+router.post("/getAll",getEmployees);
 router.post("/getEmployeeById",getEmployeeById);
 
 
