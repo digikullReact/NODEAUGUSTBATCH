@@ -1,5 +1,7 @@
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
+const jwt=require("jsonwebtoken");
+
 
 exports.middlewareLoggng=(req,res,next)=>{
     console.log(req.body);
@@ -19,5 +21,21 @@ exports.middlewareLoggng=(req,res,next)=>{
         next();
 
     }
-res.json({message:"Fields Are Missing"});
+}
+
+    exports.authorization=async(req,res,next)=>{
+
+        try {
+            
+            if(!req.headers.authorization) throw new Error("Missing auth token")
+
+       await jwt.verify(req.headers.authorization, 'shhhhh');
+       next();
+
+        } catch (error) {
+            next(error);
+        }
+
+
+       
 }

@@ -1,4 +1,4 @@
-const { createUserService, getAllUserService } = require("../services/authservice");
+const { createUserService, getAllUserService, loginService } = require("../services/authservice");
 
 exports.signUp=async(req,res)=>{
     console.log(req.body);
@@ -16,12 +16,37 @@ exports.signUp=async(req,res)=>{
 
 }
 
+exports.logIn=async(req,res,next)=>{
+
+    try {
+        //    const data=User.find();
+
+        const data=await loginService(req.body);
+        res.json({message:"Success",data:[data]});
+        
+    } catch (error) {
+     
+  
+
+     
+        next(error);
+
+    }
+
+}
+
+
 exports.getAllData=(req,res)=>{
+
+ 
+
 
     getAllUserService().then(data=>{
         res.json({response:data});
 
     }).catch(err=>{
+
+        next(err);
 
     })
     

@@ -8,6 +8,16 @@ exports.createUserDaoAsync = async (body) => {
      throw new Error(error);
   }
 };
+
+
+exports.findUserDao = async (body) => {
+
+  try {
+    return await User.findOne(body)
+  } catch (error) {
+     throw new Error(error);
+  }
+};
 //db.collec
 exports.findAllUsers=()=>{
 

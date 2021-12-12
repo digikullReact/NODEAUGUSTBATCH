@@ -3,6 +3,7 @@ const cors=require("cors");
 const authRoutes=require("./routes/authroutes");
 const userRoutes=require("./routes/userorutes");
 const { checKForPRoperData } = require("./middlewares");
+const { centralErrorHandler } = require("./controllers/errorcontroller");
 const app=express(); //app object
 
 app.use(cors());
@@ -15,6 +16,9 @@ app.use(express.urlencoded({extended:true})); //www-urlencodedd data
 
 app.use("/api/auth",authRoutes);
 app.use("/api/user",userRoutes);
+
+// Central Error Handler --->
+app.use(centralErrorHandler);
 
 
 
