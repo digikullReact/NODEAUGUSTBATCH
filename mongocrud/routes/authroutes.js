@@ -12,7 +12,7 @@ const { checKForPRoperData, middlewareLoggng, authorization } = require("../midd
 //route level midleware
 router.post("/signup",middlewareLoggng,signUp);
 router.post("/login",logIn);
-router.use(authorization);
+//router.use(authorization);
 router.post("/allData",getAllData);
 
 
