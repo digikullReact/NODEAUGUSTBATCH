@@ -1,4 +1,5 @@
 const { createUserService, getAllUserService, loginService } = require("../services/authservice");
+const {awsUpload}=require("../utils/awsupload")
 
 exports.signUp=async(req,res)=>{
     console.log(req.body);
@@ -35,6 +36,25 @@ exports.logIn=async(req,res,next)=>{
 
 }
 
+
+exports.uploadFile=async(req,res)=>{
+
+
+    try {
+
+
+      // console.log(awsUpload);
+        awsUpload(req.file,function(data){
+            res.json({message:"Success",filePath:data.Location});
+        })
+     
+        
+    } catch (error) {
+        console.log(error);
+        
+    }
+
+}
 
 exports.getAllData=(req,res)=>{
 

@@ -13,6 +13,9 @@
 
 ./mongocrud/node_modules
 /mongocrud/node_modules
+./mongocrud/.env
+/mongocrud/.env
+/mongocrud/node_modules
 ./simmplemiddleware/node_modules
 /simmplemiddleware/node_modules
 /mongodagg/node_modules
